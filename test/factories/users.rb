@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :user do
-    username Faker::Pokemon.name
-    email_address Faker::Internet.email
+    username {Faker::Pokemon.name}
+    email {Faker::Internet.email}
     bio Faker::Cat.breed
   end
 end
