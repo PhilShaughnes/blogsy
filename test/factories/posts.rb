@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :post do
     title {Faker::Beer.name}
-    body {Faker::Hipster.paragraph}
+    body {Faker::ChuckNorris.fact}
     user
-    summary Faker::ChuckNorris.fact
+    summary {Faker::StarWars.quote}
   end
 end
