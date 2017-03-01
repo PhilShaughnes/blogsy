@@ -3,15 +3,14 @@ Rails.application.routes.draw do
   #root  'users#index'
 
   get    '/users'            => 'users#index'
-  get    '/users/:id/posts'  => 'users#show_posts'
+  get    '/users/:id/posts'  => 'posts#index'
   post   '/users'            => 'users#create'
 
 
   get    '/posts'            => 'posts#index'
   get    'posts/:id'         => 'posts#show'
   #delete '/posts/:id'        => 'posts#destroy'
-  #post   '/posts'            => 'posts#create' #upvote?
 
-  get     'post/:id/comments' => 'comments#show'
+  get    'post/:id/comments' => 'comments#show'
 
 end
